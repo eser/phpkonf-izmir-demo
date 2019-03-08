@@ -27,3 +27,7 @@ steps:
 
 - script: ./vendor/bin/phpunit ./src
   displayName: 'unit tests'
+
+- task: PublishBuildArtifacts@1
+  inputs:
+    artifactName: 'drop'
