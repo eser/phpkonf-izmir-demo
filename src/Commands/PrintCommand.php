@@ -7,6 +7,7 @@ use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputInterface;
 use Symfony\Component\Console\Input\InputOption;
 use Symfony\Component\Console\Output\OutputInterface;
+use PHPKonf\MessageProvider;
 
 class PrintCommand extends Command
 {
@@ -25,6 +26,9 @@ class PrintCommand extends Command
 
     public function execute(InputInterface $input, OutputInterface $output)
     {
-        $output->writeln('Message: ' . $input->getArgument('message'));
+        $messageProvider = new MessageProvider();
+        $message = $messageProvider->validate($input->getArgument('message'));
+
+        $output->writeln('Message: ' . $message);
     }
 }
