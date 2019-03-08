@@ -1,5 +1,7 @@
 # [phpkonf-izmir-demo](https://github.com/eserozvataf/phpkonf-izmir-demo)
 
+[![Build Status](https://dev.azure.com/eserozvataf/PHPKonf%20%C4%B0zmir%20Demo/_apis/build/status/phpkonf-izmir-demo?branchName=master)](https://dev.azure.com/eserozvataf/PHPKonf%20%C4%B0zmir%20Demo/_build/latest?definitionId=5&branchName=master)
+
 [PHPKonf İzmir](https://izmir.phpkonf.org/) 2019'da sunacak olduğum "Azure DevOps ve GitHub ile uçtan uca PHP Projeleri?" konuşmasının demo sunumudur.
 
 ## Çalıştırmak için adımlar:
