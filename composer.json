@@ -1,6 +1,6 @@
 {
     "name": "eserozvataf/phpkonf-izmir-demo",
-    "type": "library",
+    "type": "project",
     "license": "Apache-2.0",
     "authors": [
         {
@@ -8,5 +8,13 @@
             "email": "eser@ozvataf.com"
         }
     ],
-    "require": {}
+    "autoload": {
+        "psr-4": {
+            "PHPKonf\\": "src"
+        },
+        "classmap": [ "src" ]
+    },
+    "require": {
+        "symfony/console": "^4.2"
+    }
 }
